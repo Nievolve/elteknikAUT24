@@ -62,3 +62,36 @@ print(f"Ur = {Ur:.2f}")
 #Uc²=U²-Ur²
 Uc = math.sqrt(U**2-Ur**2)
 print(f"UC = {Uc:.2f}")
+
+
+#93
+print("93")
+R = 20
+L = 0.2
+f = 50
+Xl = 2*math.pi*f*L
+Z = math.sqrt(R**2+Xl**2)
+tanfi = math.degrees(math.atan(Xl/R))
+I = 230 / Z
+
+print(f"a) Xl = {Xl:.2f} Omh")
+print(f"b) Z = {Z:.2f} Ohm")
+print(f"c) Fasförskjutningvinkeln är : {tanfi:.2f} grader")
+print(f"d) Strömmen om spänningen är 230V är : {I:.2f} A")
+
+#94
+print("94")
+Xl=90
+f = 50
+U = 48
+I = 0.1
+L = 90/f/2/math.pi
+print(f"b) Indukdansen = {L:.2f} H")
+Xl = 2*math.pi*f*L
+Ul = I * Xl
+fiRad = (math.sin(Ul/U))
+Z = Xl/fiRad
+print(f"Z = {Z:.3g}")
+R = math.sqrt(Z**2-Xl**2)
+print(f"REsistansen (R) = {R:.3g}")
+print(f"Fasförskjutningsvinkeln = {math.degrees(fiRad):.2f} grader")
